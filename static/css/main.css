@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+/* Reset styles
+-------------------------------------------------- */
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+  
 /* Main page with stikky-footer
 -------------------------------------------------- */
 html,
 body {
+  font-size: 62.5%;
+  width: 100%;
   height: 100%;
-  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
   font-family: 'Source Sans Pro', sans-serif;
+  color: #360036;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 3px solid #27A822;
+  border-top: 5px solid #360036;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -17,6 +35,52 @@ body {
   margin: 0 auto -65px;
   /* Pad bottom by footer height */
   /*padding: 0 0 60px;*/
+}
+
+/* Coming soon page
+-------------------------------------------------- */
+
+#bare {
+  padding-bottom: 50px;	
+  min-height: 100%;
+  margin: 0;
+}
+
+body > div#bare > section#coming-soon {
+  background-image: url('/static/img/color-splash-background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+section#coming-soon div.title {
+  padding: 18rem 0 10rem 0;
+}
+
+section#coming-soon div.title h1 {
+  color: white;
+  text-shadow: 1px 1px 5px #360036, 3px 3px 5px #a40080, 2px 2px 5px #550055;
+  font-size: 7rem;
+}
+
+section#coming-soon div.summary {
+  color: #A40080;
+  font-weight: 700;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 2.5rem;
+  background: rgba(0, 0, 54, 0.8);
+  border: 0rem solid #fff;
+  border-radius: 25px;
+}
+
+section#coming-soon div.summary a {
+  color: #008080;
+}
+
+section#coming-soon div.summary a:hover {
+  color: #006080;
 }
 
 /* Navbar
@@ -71,6 +135,7 @@ body {
 .navbar-default .navbar-link:hover {
   color: #6b6b6b;
 }
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #6b6b6b;
@@ -87,25 +152,27 @@ body {
 /* Custom page CSS
 -------------------------------------------------- */
 
-.container {
+.container-fluid {
   width: auto;
-  max-width: 800px;
   text-align: center;
 }
-.container .text-muted {
+.container-fluid .text-muted {
   margin: 20px 0;
 }
-.container a {
-  color: #27A822;
+.container-fluid a {
+  color: #A40080;
 }
-.container a:hover {
-  color: #267723;
+.container-fluid a:hover {
+  color: #008080;
+  text-decoration: none;
 }
+
 .img-responsive {
  display: block;
  height: auto;
  max-width: 100%;
 }
+
 .panel-default h4 {
   text-align: left;
   line-height: 24px;
@@ -120,10 +187,11 @@ body {
   font-size: 15px;
 }
 .panel-default h4 a, h5 a {
-  color: #27A822;
+  color: #A40080;
 }
 .panel-default h4 a:hover, h5 a:hover {
-  color: #267723;
+  color: #008080;
+  text-decoration: none;
 }
 .panel{
   border-style: none;
@@ -132,16 +200,20 @@ body {
   padding-top: -10px;
   text-align: left;
 }
+
 .social {
-  padding-top: 12px;
-  word-spacing: 25px;
+  padding-top: 5rem;
+  word-spacing: 2.5rem;
+  font-size: 2.5rem;
 }
-.social h4 > a {
-  color: #000000;
+.social a {
+  color: #360036;
 }
+
 .avatar {
   padding-top: 5%;
 }
+
 .blog-post{
   padding-top: 15px;
 }
@@ -151,11 +223,9 @@ body {
 .related-posts h4 {
   text-align: center;
 }
+
 .page-not-found {
   padding-top: 20%;
-}
-.disqus {
-  padding-bottom: 15px;
 }
 
 .blogpost{
@@ -174,11 +244,10 @@ body {
 	color: #6b6b6b;
 }
 div.footer{
-  border-bottom: 5px solid #27A822;;
+  border-bottom: 5px solid #A40080;;
 }
 /* Set the fixed height of the footer here */
 /*.footer {
   height: 50px;
   padding-bottom: 15px;
-  
 }*/
