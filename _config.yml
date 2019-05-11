@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # edit here to achieve your personal greatness
-url: https://meg-gutshall.github.io/  # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://meg-gutshall.github.io/"  # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""  # the subpath of your site, e.g. /blog
 title: Feral Code Philly
 author: Meghan Gutshall
