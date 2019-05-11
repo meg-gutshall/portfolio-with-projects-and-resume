@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
 
 /* Reset styles
 -------------------------------------------------- */
@@ -24,7 +24,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #360036;
   /* The html and body elements cannot have any padding or margin. */
-  border-top: 5px solid #360036;
+  border-top: 5px solid #A40080;
 }
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -41,7 +41,6 @@ body {
 -------------------------------------------------- */
 
 #bare {
-  padding-bottom: 50px;	
   min-height: 100%;
   margin: 0;
 }
@@ -61,26 +60,35 @@ section#coming-soon div.title {
 section#coming-soon div.title h1 {
   color: white;
   text-shadow: 1px 1px 5px #360036, 3px 3px 5px #a40080, 2px 2px 5px #550055;
-  font-size: 7rem;
+  font-size: 8.4rem;
 }
 
 section#coming-soon div.summary {
-  color: #A40080;
-  font-weight: 700;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding: 2.5rem;
-  background: rgba(0, 0, 54, 0.8);
+  margin-left: 7.5rem;
+  margin-right: 7.5rem;
+  margin-bottom: 10rem;
+  padding: 2.5rem 5rem;
+  background: rgba(54, 0, 54, 0.8);
   border: 0rem solid #fff;
   border-radius: 25px;
 }
 
+section#coming-soon div.summary p {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  padding-top: 2rem;
+}
+
 section#coming-soon div.summary a {
   color: #008080;
+  font-weight: 700;
 }
 
 section#coming-soon div.summary a:hover {
-  color: #006080;
+  color: #A40080;
+  font-weight: 700;
 }
 
 /* Navbar
