@@ -1,6 +1,16 @@
 _site
 .sass-cache
-.jekyll-metadata
 
-# Custom adds
+# OS X
 .DS_Store
+
+# Jekyll build
+/_site/
+.jekyll-metadata
+Gemfile.lock
+
+# webstorm
+.idea/
+
+# others
+*.swp
