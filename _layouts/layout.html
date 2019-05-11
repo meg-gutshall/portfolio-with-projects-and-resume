@@ -8,6 +8,9 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="favicon" href="{{ site.baseurl }}static/img/favicon.ico">
 
+    <!-- Custom metadata -->
+    <meta name="format-detection" content="telephone=no"> <!-- Prevent iOS from telephone number auto-detect -->
+
     {% if page.title %}
       <title>{{ page.title }} – {{ site.title }}</title>
     {% else %}
