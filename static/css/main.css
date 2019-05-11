@@ -39,7 +39,6 @@ body {
 
 /* Coming soon page
 -------------------------------------------------- */
-
 #bare {
   min-height: 100%;
   margin: 0;
@@ -91,6 +90,35 @@ section#coming-soon div.summary p a:hover {
   font-weight: 700;
   text-decoration: none;
 }
+
+  /* Coming soon page — Responsive
+  -------------------------------------------------- */
+  /* Small devices (landscape phones, 576px to 767px) */
+  @media (max-width: 767px) {
+    section#coming-soon div.title {
+      padding: 6rem 0 4rem 0;
+      margin: 0 1.5rem;
+    }
+
+    section#coming-soon div.title h1 {
+      font-size: 4.8rem;
+    }
+
+    section#coming-soon div.summary {
+      margin: 0rem 3.5rem 1rem 3.5rem;
+      padding: 1rem 2rem;
+    }
+    
+    section#coming-soon div.summary p {
+      font-size: 1.8rem;
+      padding-top: 1rem;
+    }
+  }
+
+  /* Medium devices (tablets, 768px to 991px) */
+  @media (max-width: 991px) {
+
+  }
 
 /* Navbar
 -------------------------------------------------- */
