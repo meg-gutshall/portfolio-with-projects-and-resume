@@ -59,18 +59,17 @@ section#coming-soon div.title {
 
 section#coming-soon div.title h1 {
   color: white;
-  text-shadow: 1px 1px 5px #360036, 3px 3px 5px #a40080, 2px 2px 5px #550055;
+  text-shadow: 3px 3px 0.5rem #360036, 5px 5px 0.75rem #550055, 7px 7px 1rem #a40080;
   font-size: 8.4rem;
 }
 
 section#coming-soon div.summary {
-  margin-left: 7.5rem;
-  margin-right: 7.5rem;
-  margin-bottom: 10rem;
+  margin: 0rem 7.5rem 10rem 7.5rem;
   padding: 2.5rem 5rem;
   background: rgba(54, 0, 54, 0.8);
-  border: 0rem solid #fff;
+  border: 0.25rem solid #006080;
   border-radius: 25px;
+  /* TODO: Add shadow element */
 }
 
 section#coming-soon div.summary p {
@@ -81,14 +80,16 @@ section#coming-soon div.summary p {
   padding-top: 2rem;
 }
 
-section#coming-soon div.summary a {
+section#coming-soon div.summary p a {
   color: #008080;
   font-weight: 700;
+  text-decoration: none;
 }
 
-section#coming-soon div.summary a:hover {
+section#coming-soon div.summary p a:hover {
   color: #A40080;
   font-weight: 700;
+  text-decoration: none;
 }
 
 /* Navbar
