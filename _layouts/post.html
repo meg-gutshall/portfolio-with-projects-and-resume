@@ -42,5 +42,7 @@ layout: layout
 			</div>
 		</div>
 	</div>
-	{% include disqus.html if site.disqus %}
+	{% if site.disqus %}
+		{% include disqus.html %}
+	{% endif %}
 </div>

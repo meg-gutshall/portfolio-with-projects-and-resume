@@ -33,7 +33,9 @@
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}static/css/syntax.css" />
 
     <!-- Google Analytics -->
-    {% include analytics.html if site.google_analytics %}
+    {% if site.google_analytics %}
+      {% include analytics.html %}
+    {% endif %}
   </head>
   <!-- Main Body-->
   <body>
