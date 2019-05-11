@@ -13,22 +13,35 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+
+# edit here to achieve your personal greatness
+url: https://meg-gutshall.github.io/  # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""  # the subpath of your site, e.g. /blog
+title: Feral Code Philly
+author: Meghan Gutshall
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+  Thoughts from the wild experience of learning to program
+avatar: profile.png
+email: meghan.gutshall@gmail.com
+github: meg-gutshall
+twitter: meg_gutshall
+linkedin: meghan-gutshall
+# stackoverflow: username  # e.g: users/2735833/proton1h1
+# disqus: username
+# google_analytics: code  # e.g.: UA-69391421-1
 
 # Build settings
+highlighter: rouge
 markdown: kramdown
-theme: minima
+rdiscount:
+  extensions: [smart]
+permalink: /:title.html
+paginate: 7
+port: 4000
+safe: true
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -41,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# needed for travis-ci build
+exclude: [vendor]
