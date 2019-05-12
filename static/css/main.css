@@ -53,7 +53,7 @@ body > div#bare > section#coming-soon {
 }
 
 section#coming-soon div.title {
-  padding: 18rem 0 10rem 0;
+  padding: 14rem 0 10rem 0;
 }
 
 section#coming-soon div.title h1 {
@@ -91,34 +91,108 @@ section#coming-soon div.summary p a:hover {
   text-decoration: none;
 }
 
-  /* Coming soon page — Responsive
-  -------------------------------------------------- */
-  /* Small devices (landscape phones, 576px to 767px) */
-  @media (max-width: 767px) {
-    section#coming-soon div.title {
-      padding: 6rem 0 4rem 0;
-      margin: 0 1.5rem;
-    }
+section#coming-soon div.summary div.social {
+  padding-top: 3.5rem;
+}
 
-    section#coming-soon div.title h1 {
-      font-size: 4.8rem;
-    }
+section#coming-soon div.summary div.social a {
+  color: #008080;
+}
 
-    section#coming-soon div.summary {
-      margin: 0rem 3.5rem 1rem 3.5rem;
-      padding: 1rem 2rem;
-    }
-    
-    section#coming-soon div.summary p {
-      font-size: 1.8rem;
-      padding-top: 1rem;
-    }
+section#coming-soon div.summary div.social a:hover {
+  color: #A40080;
+}
+
+/* Medium devices (portrait phones and tablets, 768px to 991px) */
+@media screen and (max-width: 991px) and (orientation: portrait) {
+  section#coming-soon div.title {
+    padding: 8rem 0 5rem 0;
+    margin: 0 2.5rem;
   }
 
-  /* Medium devices (tablets, 768px to 991px) */
-  @media (max-width: 991px) {
-
+  section#coming-soon div.title h1 {
+    font-size: 6.4rem;
   }
+
+  section#coming-soon div.summary {
+    margin: 0 5rem 2rem 5rem;
+    padding: 2rem 4rem;
+  }
+  
+  section#coming-soon div.summary p {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+  }
+}
+
+/* Medium devices (landscape phones and tablets, 767px to 991px) */
+@media screen and (max-width: 991px) and (orientation: landscape) {
+  section#coming-soon div.title {
+    padding: 8rem 0 5rem 0;
+    margin: 0 2.5rem;
+  }
+
+  section#coming-soon div.title h1 {
+    font-size: 6.4rem;
+  }
+
+  section#coming-soon div.summary {
+    margin: 0 5rem 2rem 5rem;
+    padding: 2rem 4rem;
+  }
+  
+  section#coming-soon div.summary p {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+  }
+}
+
+/* Small devices (portrait phones, 576px to 767px) */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  section#coming-soon div.title {
+    padding: 6rem 0 4rem 0;
+    margin: 0 1.5rem;
+  }
+
+  section#coming-soon div.title h1 {
+    font-size: 4.8rem;
+  }
+
+  section#coming-soon div.summary {
+    margin: 0rem 3.5rem 1rem 3.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  section#coming-soon div.summary p {
+    font-size: 1.8rem;
+    padding-top: 1rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  section#coming-soon div.title {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  section#coming-soon div.title h1 {
+    font-size: 4.8rem;
+  }
+
+  section#coming-soon div.summary {
+    margin: 0rem 3.5rem 1rem 3.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  section#coming-soon div.summary p {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+  }
+
+  section#coming-soon div.summary div.social {
+    padding-top: 0.5rem;
+  }
+}
 
 /* Navbar
 -------------------------------------------------- */
@@ -239,7 +313,6 @@ section#coming-soon div.summary p a:hover {
 }
 
 .social {
-  padding-top: 5rem;
   word-spacing: 2.5rem;
   font-size: 2.5rem;
 }
