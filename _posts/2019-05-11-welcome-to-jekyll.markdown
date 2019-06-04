@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-05-11 00:30:04 -0400
-header-img: "about-bg.png"
+featured-img: "/static/img/about-bg.png"
 categories: jekyll update
 tags: [example, test]
 ---
