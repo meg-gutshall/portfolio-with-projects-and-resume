@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # edit here to achieve your personal greatness
-url: # the base hostname & protocol for your site, e.g. http://example.com
+url: https://meghangutshall.com/
 baseurl: ""  # the subpath of your site, e.g. /blog
 title: Feral Code Philly
 author: Meghan Gutshall
@@ -29,6 +29,7 @@ linkedin: meghan-gutshall
 # stackoverflow: username  # e.g: users/2735833/proton1h1
 # disqus: username
 # google_analytics: code  # e.g.: UA-69391421-1
+header-img: "/static/img/home-bg.png"
 
 # Build settings
 highlighter: rouge
