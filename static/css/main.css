@@ -40,13 +40,6 @@ body {
   /* Pad bottom by footer height */
   /*padding: 0 0 60px;*/
 }
-.panel{
-  border-style: none;
-}
-.panel-body {
-  padding-top: -1rem;
-  text-align: left;
-}
 .img-responsive {
   display: block;
   height: auto;
@@ -56,8 +49,8 @@ body {
 
 /* Typography */
 p {
-  line-height: 1.5rem;
-  margin: 3rem 0;
+  line-height: 2.2rem;
+  margin: 2.6rem 0;
 }
 .pink {
   color: #a40080;
@@ -137,6 +130,9 @@ hr.small {
   text-align: left;
   line-height: 3rem;
   font-size: 1.8rem;
+}
+.post-heading > .meta {
+  margin-top: 3rem;
 }
 .post-tags{
   text-align: left;
@@ -628,6 +624,7 @@ section#coming-soon div.summary {
 section#coming-soon div.summary p {
   color: #fff;
   font-size: 2.4rem;
+  line-height: 3.3rem;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   padding-top: 2rem;

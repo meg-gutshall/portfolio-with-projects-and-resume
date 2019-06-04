@@ -3,27 +3,27 @@ layout: layout
 ---
 
 <!-- Post Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}static/img/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
 	<div class="container">
-			<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-							<div class="post-heading">
-									<h1>{{ page.title }}</h1>
-									{% if page.subtitle %}
-									<h2 class="subheading">{{ page.subtitle }}</h2>
-									{% endif %}
-									<span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-							</div>
-					</div>
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>{{ page.title }}</h1>
+					{% if page.subtitle %}
+						<h2 class="subheading">{{ page.subtitle }}</h2>
+					{% endif %}
+					<span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+				</div>
 			</div>
+		</div>
 	</div>
 </header>
 
 <!-- Post Content -->
 <article>
 	<div class="container">
-		<div class="panel panel-default">
-			<div class="panel-body">
+		<div class="row">
+			<div class="col">
 				<div class="blogpost">
 					{{ content }}
 					<hr>
