@@ -3,7 +3,7 @@ layout: post
 title: "HTML & CSS: The ‘90s Kids of Programming"
 date: 2018-08-07 00:12:12 -0400
 permalink: html-and-css-the-90s-kids-of-programming
-featured-img: "/static/img/html-css.png"
+featured-img: "/static/img/post-images/html-css.png"
 categories: [Flatiron School]
 tags: [software engineering, HTML, CSS]
 excerpt: <p>The combination of HTML and CSS make up a huge part of front-end web development. If a program touches the Internet, it will without a doubt rely on HTML and CSS at its base level. There are plenty of frameworks and templates that do a lot of (if not all) the work for you, but this leads to websites and apps looking like homogenous cookie-cutter builds. Contrary to popular belief, I think that HTML and CSS are still as important as they were some two decades past so in this post I go back to the very basics and give an introduction to each of these amazing languages for those who may be new to software development.</p>
@@ -13,7 +13,7 @@ _For brevity’s sake, I am going to use acronyms throughout this post. Full phr
 
 After almost two months in the [online software engineering program](https://flatironschool.com/career-courses/coding-bootcamp/online/), I finally feel like I’m getting into the thick of the curriculum at Flatiron. I’ve finished Intro to Ruby Development, learned about Git and [GitHub](https://github.com/meg-gutshall), sped through Procedural Ruby, and am now working on the Object Oriented Ruby section. One section I especially enjoyed though was HTML and CSS Introduction.
 
-![HTML & CSS Symbols](/img/post-images/html-css.png)
+![HTML & CSS Symbols](static//img/post-images/html-css.png)
 
 ## HTML: The Language of the Web
 

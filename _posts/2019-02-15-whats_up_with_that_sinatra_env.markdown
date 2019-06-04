@@ -3,7 +3,7 @@ layout: post
 title: "What's Up With That!?: SINATRA_ENV"
 date: 2019-02-15 17:01:16 -0500
 permalink: whats-up-with-that-sinatra-env
-featured-img: "/static/img/complex-forms-environment.jpg"
+featured-img: "/static/img/post-images/complex-forms-environment.jpg"
 categories: [Flatiron School]
 tags: [software engineering, Sinatra, environment]
 excerpt: <p>If you’re in the Sinatra ActiveRecord section of the Flatiron School, you’ve probably seen this error message a few times “Migrations are pending. Run <code>rake db:migrate SINATRA_ENV=test</code> to resolve the issue.” Well we know we need to run <code>rake db:migrate</code> to create our migration tables, but <code>"SINATRA_ENV"</code>... what’s up with that!? It turns out that <code>"SINATRA_ENV"</code> is much more powerful than you might think and is the key (both literally and figuratively) to making your program run effectively.</p>
@@ -17,7 +17,7 @@ First let’s go over a few files line by line so we can follow `ENV["SINATRA_EN
 
 `"SINATRA_ENV"` is the key to Ruby's `ENV` hash and defines your deployment environment. This is set in your `Rakefile`, where the app's rake tasks are defined.
 
-![Picture of Rakefile](/img/post-images/complex-forms-rakefile.jpg)
+![Picture of Rakefile](/static/img/post-images/complex-forms-rakefile.jpg)
 
 ### Line 1
 
@@ -47,7 +47,7 @@ This loads Rake tasks from the `sinatra-activerecord` gem. A custom Rake task is
 
 Now let’s check out our `config/environment.rb` file, where we load all of the app's dependencies, from gems to database connections.
 
-![Picture of environment.rb](/img/post-images/complex-forms-environment.jpg)
+![Picture of environment.rb](/static/img/post-images/complex-forms-environment.jpg)
 
 ### Line 1
 
@@ -89,7 +89,7 @@ This loads all other files nested under `app` to run the program.
 
 Lastly, let’s look at our `config.ru` file, which details to Rack the environment requirements of the app and then runs the app.
 
-![Picture of config.ru](/img/post-images/complex-forms-config.jpg)
+![Picture of config.ru](/static/img/post-images/complex-forms-config.jpg)
 
 ### Line 1
 
@@ -145,7 +145,7 @@ So now we know what happens each time the `Rakefile`, the `config/environment.rb
 
 When we run `learn` to test our app, this triggers the gem `rspec` which will run our `spec_helper.rb` file.
 
-![Picture of spec_helper.rb](/img/post-images/complex-forms-spec-helper.jpg)
+![Picture of spec_helper.rb](/static/img/post-images/complex-forms-spec-helper.jpg)
 
 ### Line 1
 

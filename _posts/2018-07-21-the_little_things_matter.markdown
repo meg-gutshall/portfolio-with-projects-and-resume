@@ -3,7 +3,7 @@ layout: post
 title: "The Little Things Matter"
 date: 2018-07-21 18:43:56 -0400
 permalink: the-little-things-matter
-featured-img: "/static/img/return-false.jpg"
+featured-img: "/static/img/post-images/return-false.jpg"
 categories: [Flatiron School]
 tags: [software engineering, Ruby, Spanish]
 excerpt: <p>The title of this post may be a bit misleading. I'm not telling you to stress out over the little details and tiny mistakes, but when you're first learning something new, that's definitely the time to be aware of them and form good habits to combat any bad ones you see beginning to develop because sometimes small mistakes can snowball into big misunderstandings. I give some examples in my post here&mdash;one relating to my Spanish learning experience at Temple, the other concerning a recent lab I had trouble solving.</p>
@@ -25,7 +25,7 @@ If you’re a programmer, I’m sure you’ve been through this at least once be
 
 Luckily, Flatiron’s platform Learn.co lets you chat live with a technical coach when you get stuck on something&mdash;which I probably should have utilized about 30&ndash;40 minutes into my struggle instead of driving myself completely insane. I was connected with technical coach James (shout out to James!) and we got to work. He seemed a bit confused because everything looked okay to him, so we tried a few small tweaks at a time to see if we could get the code to pass. In the end, we discovered that I was returning `false` at the wrong part of the program. If you return `false` inside an iteration, the method only accepts the first object in your array and ends before iterating through the rest of the objects. In other words, not good.
 
-![Screenshot of side-by-side code](/img/post-images/return-false.jpg)
+![Screenshot of side-by-side code](/static/img/post-images/return-false.jpg)
 
 Ugh!! After all of that confusion, hard work, and frustration, the end result was switching just two lines to get the program to pass the test. Two lines! That’s it! I laughed at myself, thanked James profusely, and was able to code out the rest of the program on my own to complete the Tic Tac Toe Game Status lab. Again (over a well-deserved beer), I thought to myself: ‘Have patience. You’ll get this down soon.’
 

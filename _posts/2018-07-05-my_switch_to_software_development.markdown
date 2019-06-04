@@ -3,7 +3,7 @@ layout: post
 title: "My $witch to $oftware Development"
 date: 2018-07-05 09:39:05 -0400
 permalink: my-switch-to-software-development
-featured-img: "/static/img/cash.jpg"
+featured-img: "/static/img/post-images/cash.jpg"
 categories: [Flatiron School]
 tags: [software engineering, reflection]
 excerpt: <p>My path in life so far has been somewhat non-traditional. I went to college for four years with only one summer break (working three jobs at one point), I've never had a defined career path so I took jobs based on opportunity, I've been fortunate enough to travel to several countries and still save up enough to become a single female homeowner when I turned 25, and I basically came out on the other end of a quarter-life crisis with a new, daring plan for my life in mind. This post outlines key moments that got me to where I am today and will surely be followed in the future by other similar posts.</p>
@@ -13,7 +13,7 @@ In late 2017 I was working as technical coordinator and marketing lead for a sma
 
 As part of my job, I was in charge of onboarding new consultants and running payroll which meant I had intimate knowledge of everyone’s salary details and how many years of work experience it took for them to get there. This insight, combined with networking events in which I met many women who had transitioned into the tech industry, sparked an idea in my brain and got me thinking, ‘Why can’t I do this too?’
 
-![Cash](/img/post-images/cash.jpg)
+![Cash](/static/img/post-images/cash.jpg)
 
 Okay, so the title of my blog post may be a little misleading. The wages, benefits, and job perks that I encountered with the consultants at the recruiting firm definitely caught my eye, but after the first time I manipulated HTML code and saw tangible changes reflect on a website… you could say I fell in love.
 

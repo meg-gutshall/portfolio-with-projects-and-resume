@@ -3,7 +3,7 @@ layout: post
 title: "Get to Know Your Self"
 date: 2018-08-26 13:23:53 -0400
 permalink: get-to-know-your-self
-featured-img: "/static/img/simple-self.png"
+featured-img: "/static/img/post-images/simple-self.png"
 categories: [Flatiron School]
 tags: [software engineering, Ruby, keywords]
 excerpt: <p>While Ruby is an incredibly user-friendly language, it’s not without its conundrums&mdash;one in particular being <code>self</code>. <code>self</code> is a Ruby keyword that can be scoped to any instance or class. This enables developers to contextually reference a particular instance or class&mdash;depending on what the needs are for their program&mdash;without using a specific variable name. It's not hard to see how this could quickly get confusing. Read on to walk through some simple examples and gain a better understanding of the concept of <code>self</code>.</p>
@@ -13,7 +13,7 @@ While Ruby is an incredibly user-friendly language, it’s not without its conun
 
 Here’s a very simple example of `self` referring to a class and `self` referring to an instance of a class:
 
-![Simple example of using `self`](/img/post-images/simple-self.png)
+![Simple example of using `self`](/static/img/post-images/simple-self.png)
 
 If the method is a message, who is the receiver? The object, or `self`! In this example, `self` is receiving instruction from other parts of the code and applying it to the current object being used in the program. Here’s how:
 
@@ -31,7 +31,7 @@ So how does `self` know when to change the object it’s referencing? Two ways:
 
 I know, that’s a lot of information and your head is probably spinning by now, but let’s do one more example of `self`. I’ll walk you through it!
 
-![More complex example of using `self`](/img/post-images/ice-cream-self.png)
+![More complex example of using `self`](/static/img/post-images/ice-cream-self.png)
 
 In defining the Creameries class, we create attribute readers for flavors, name, and flavor. Flavors is an instance variable that’s initialized as an empty array, meant to hold all the ice cream flavors of a particular creamery. We don’t want to accidentally overwrite the `@flavors` array and change its data type, so it is set as a reader. Once the creamery is created, its name won’t be changed (likewise with each flavor name) which is why they’re set as readers. We then create an `@@all` class variable to store new creamery objects (which are instances of the Creameries class) for future use.
 
