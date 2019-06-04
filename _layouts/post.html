@@ -2,97 +2,39 @@
 layout: layout
 ---
 
-<div class="container">
-	<div class="blog-post">
-		<h3>
-		  <strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
-		</h3>
-	</div>
-	<div class="blog-title">
-		<h4>
-		{{ page.date | date: "%B %e, %Y" }}
-			&nbsp;&nbsp;
-			{% for tag in page.tags %}
-			 <span class="label label-success">{{ tag }}</span>
-			{% endfor %}
-		</h4>
-	</div>
-	<div class="panel panel-default">
-		<div class="panel-body">
-			<div class="blogpost">
-			  {{ content }}
-			   <hr>
-			   <div class="related-posts">
-				   <h5>Related Posts</h5>
-				   {% for post in site.related_posts limit:3 %}
-						<div class="row">
-							 <div class="col-sm-4 col-md-4 col-lg-4">
-								 <h6 style="text-align: right">
-								 	{{ post.date | date: "%B %e, %Y" }}
-								 </h6>
-							 </div>
-							 <div class="col-sm-8 col-md-8 col-lg-8">
-								 <h6 style="text-align: left">
-								 	<strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
-								 </h6>
-							 </div>
-						</div>
-					{% endfor %}
-			   </div>
-			</div>
-		</div>
-	</div>
-	{% if site.disqus %}
-		{% include disqus.html %}
-	{% endif %}
-</div>
-
-
-<h1>FLATIRON</h1>
-
 <!-- Post Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.subtitle %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% endif %}
-                    <span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+			<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+							<div class="post-heading">
+									<h1>{{ page.title }}</h1>
+									{% if page.subtitle %}
+									<h2 class="subheading">{{ page.subtitle }}</h2>
+									{% endif %}
+									<span class="meta">Posted by {% if site.author %}{{ site.author }}{% else %}{{ site.github_username}}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
+							</div>
+					</div>
+			</div>
+	</div>
 </header>
 
 <!-- Post Content -->
 <article>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-				{{ content }}
-
-                <hr>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<div class="blogpost">
+					{{ content }}
+					<hr>
+					<div class="post-tags">
+						{% for tag in page.tags %}
+							<span class="label label-success">{{ tag }}</span>
+						{% endfor %}
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
 </article>
-
-<hr>
