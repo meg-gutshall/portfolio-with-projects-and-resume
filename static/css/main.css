@@ -134,8 +134,21 @@ hr.small {
 .post-heading > .meta {
   margin-top: 3rem;
 }
-.post-tags{
-  text-align: left;
+.tags {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 85%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #550055
+}
+.tags a:hover {
+  background-color: #360036
 }
 
 /* Footer */
