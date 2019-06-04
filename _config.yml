@@ -57,3 +57,4 @@ plugins:
 
 # needed for travis-ci build
 exclude: [vendor]
+# exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
