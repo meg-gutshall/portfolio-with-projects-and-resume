@@ -652,6 +652,9 @@ section#coming-soon div.summary p a:hover {
   font-weight: 700;
   text-decoration: none;
 }
+section#coming-soon div.summary p.about-intro {
+  text-shadow: 3px 3px 0.5rem #ffffff;
+}
 section#coming-soon div.summary div.social {
   padding-top: 3.5rem;
 }
