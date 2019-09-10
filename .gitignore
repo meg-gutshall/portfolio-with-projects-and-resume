@@ -15,3 +15,4 @@ Gemfile.lock
 # others
 *.swp
 node_modules
+.vscode
