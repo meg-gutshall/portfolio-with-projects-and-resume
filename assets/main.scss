@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
-
-// # Only the main Sass file needs front matter (the dashes are enough)
-
-@import "variables";
-@import "bootstrap/bootstrap";
-@import "syntax-highlighting";
-@import "bootstrap-4-jekyll/bootstrap-4-jekyll";
-@import "bootstrap_customization";
-
+@use 'stylesheets/bootstrap-customization';
+@use 'stylesheets/bootstrap-4-jekyll/bootstrap-4-jekyll';
+@use 'stylesheets/bootstrap/bootstrap.scss';
 
 /* Reset styles */
 * {
@@ -53,7 +46,7 @@ body {
   display: block;
   height: auto;
   max-width: 100%;
- }
+}
 
 
 /* Typography */
