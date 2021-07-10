@@ -1,6 +1,6 @@
-@use 'stylesheets/bootstrap-customization';
-@use 'stylesheets/bootstrap-4-jekyll/bootstrap-4-jekyll';
-@use 'stylesheets/bootstrap/bootstrap.scss';
+@use 'stylesheets/variables';
+@use 'stylesheets/bootswatch';
+@use 'stylesheets/syntax-highlighting';
 
 /* Reset styles */
 * {
